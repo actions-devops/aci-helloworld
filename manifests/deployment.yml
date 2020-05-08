@@ -21,7 +21,7 @@ spec:
         "beta.kubernetes.io/os": linux
       containers:
       - name: itops-vote-front
-        image: microsoft/azure-vote-front:v1
+        image: dvaitopsdemo1acr.azurecr.io/aci-helloitops:latest
         ports:
         - containerPort: 80
         resources:
