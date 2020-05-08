@@ -24,7 +24,7 @@ jobs:
             docker push dvaitopsdemo1acr.azurecr.io/aci-helloitops:${{ github.sha }}
 
         - name: 'Deploy to Azure Container Instances'
-        - uses: azure/webapps-deploy@v2
+          uses: azure/webapps-deploy@v2
           with:
             app-name: 'webapp-container-helloitops'
             images: 'dvaitopsdemo1acr.azurecr.io/aci-helloitops:${{ github.sha }}'
