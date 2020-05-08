@@ -31,5 +31,6 @@ jobs:
             image: dvaitopsdemo1acr.azurecr.io/aci-helloitops:${{ github.sha }}
             registry-username: ${{ secrets.REGISTRY_USERNAME }}
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
+            registry-login-server:  dvaitopsdemo1acr.azurecr.io
             name: aci-helloitops
             location: 'east us'
